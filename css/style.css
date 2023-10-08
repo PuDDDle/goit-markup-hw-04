@@ -311,6 +311,22 @@ a {
   letter-spacing: 0.02em;
 }
 
+.team-icons-item {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.team-icons-link {
+  background-color: #4d5ae5;
+}
+
+.team-soc-icons {
+  fill: #f4f4fd;
+  background-color: #404bbf;
+  border-radius: 50%;
+}
+
 .portfolio {
   padding-top: 120px;
   padding-bottom: 120px;
