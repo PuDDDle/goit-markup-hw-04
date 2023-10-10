@@ -354,89 +354,83 @@ a {
   background-color: #404bbf;
 }
 
-.portfolio {
-  padding-top: 120px;
-  padding-bottom: 120px;
-}
-
 .portfolio-title {
+  color: #2e2f42;
+  text-align: center;
   font-size: 36px;
   font-weight: 700;
-  line-height: 1.11;
+  line-height: 1.11; /* 111.111% */
   letter-spacing: 0.02em;
-  text-align: center;
   text-transform: capitalize;
-  color: #2e2f42;
+  margin: 0 auto;
   margin-bottom: 72px;
 }
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  column-gap: 24px;
-  row-gap: 48px;
+  gap: 48px 24px;
 }
-
-.portfolio-item {
-  width: calc((100% - 48px) / 3);
+.portfolio-list:hover,
+.portfolio-list:focus {
 }
-
-.portfolio-item:hover .portfolio-cover-block {
-  transform: translateY(0);
-}
-
-.portfolio-subtitle {
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  color: #2e2f42;
-  margin-bottom: 8px;
-}
-.portfolio-images {
-  display: block;
-  max-width: 100%;
-}
-
-.portfolio-cover-wrap {
-  position: relative;
-  overflow: hidden;
-}
-
-.portfolio-cover-block {
-  position: absolute;
-  top: 0;
-  left: 0;
-  padding: 32px;
-  display: flex;
-  background: #4d5ae5;
-  height: 100%;
-  transform: translateY(100%);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.portfolio-cover-text {
-  color: #f4f4fd;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-}
-
-.container-app {
+.portfolio-list-container {
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
   border-top: none;
 }
-
-.portfolio-text {
-  color: var(--SLATE, #434455);
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
+.cashless-cover-wrap {
+  position: relative;
+  overflow: hidden;
+}
+.portfolio-item {
+  flex-basis: calc((100% - 48px) / 3);
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.portfolio-item:hover {
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
+.portfolio-item:hover .cashless-cover-text {
+  transform: translateY(0);
+}
+
+.portfolio-subtitle {
+  color: #2e2f42;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  margin-bottom: 8px;
+}
+.cashless-cover-block {
+  background: #4d5ae5;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.cashless-cover-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #f4f4fd;
+
+  font-family: Roboto;
+  font-size: 16px;
+
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  padding: 40px 32px;
+  background-color: #4d5ae5;
+  height: 100%;
+  width: 100%;
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 .footer {
   background-color: #2e2f42;
   padding-top: 100px;
