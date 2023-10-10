@@ -478,6 +478,7 @@ a {
   line-height: 1.5;
   font-family: Roboto;
   margin-bottom: 16px;
+  letter-spacing: 0.02em;
 }
 .footer-social-list {
   display: flex;
