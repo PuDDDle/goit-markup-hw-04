@@ -398,6 +398,11 @@ address {
   position: relative;
   overflow: hidden;
 }
+
+.portfolio-container {
+  padding: 120px 0;
+}
+
 .portfolio-item {
   flex-basis: calc((100% - 48px) / 3);
   transition-property: box-shadow;
