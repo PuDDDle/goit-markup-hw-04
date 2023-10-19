@@ -716,10 +716,6 @@ address {
   letter-spacing: 0.04em;
 }
 
-.modal-span {
-  display: inline-flex;
-}
-
 .modal-checkbox-span {
   width: 16px;
   height: 16px;
